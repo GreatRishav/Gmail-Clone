@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 1rem;
+  }
+  
+  .sidebar-header {
+    font-size: 1.5rem;
+    color: blueviolet;
+    margin-bottom: 1rem;
+  }
+  
+  .compose-btn {
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .nav-item {
+    text-decoration: none;
+    color: #555;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .nav-item:hover,
+  .nav-item.active {
+    color: blueviolet;
+    font-weight: bold;
+  }
+  
+  /* Main Content */
+  .main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header {
+    padding: 1rem;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .search {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+  }
+  
+  .mail-list {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background-color: #fff;
+  }
+  
+  .mail {
+    border-bottom: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+  
+  .mail:last-child {
+    border-bottom: none;
+  }
+  
+  .sender {
+    font-weight: bold;
+  }
+  
+  .subject {
+    color: blueviolet;
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+  
+  .preview {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 0.2rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .main {
+      flex: 1;
+      width: 100%;
+    }
+  }
+  

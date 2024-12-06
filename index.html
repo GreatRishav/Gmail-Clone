@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gmail Clone</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Gmail</h2>
+      </div>
+      <button class="compose-btn">+ Compose</button>
+      <nav class="nav">
+        <a href="#" class="nav-item active">Inbox</a>
+        <a href="#" class="nav-item">Sent</a>
+        <a href="#" class="nav-item">Drafts</a>
+        <a href="#" class="nav-item">Trash</a>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+      <header class="header">
+        <input type="text" class="search" placeholder="Search mail">
+      </header>
+      <section class="mail-list">
+        <div class="mail">
+          <h3 class="sender">John Doe</h3>
+          <p class="subject">Meeting Tomorrow</p>
+          <p class="preview">Hi, just a reminder about the meeting scheduled for tomorrow...</p>
+        </div>
+        <div class="mail">
+          <h3 class="sender">Google</h3>
+          <p class="subject">Security Alert</p>
+          <p class="preview">We noticed a new sign-in to your account...</p>
+        </div>
+        <div class="mail">
+          <h3 class="sender">Jane Smith</h3>
+          <p class="subject">Project Update</p>
+          <p class="preview">Here's the latest update on the project...</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
